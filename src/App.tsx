@@ -1,24 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
+import OrderTracking from './components/order/OrderTracking';
 import './App.css';
-
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <OrderTracking 
+        orderNumber="Y34XDHR"
+        expectedArrival="01/11/24"
+        trackingNumber="23409456724242342898"
+        currentStep={4}  
+      />
     </div>
   );
 }
